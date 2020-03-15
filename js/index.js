@@ -1,8 +1,5 @@
 	let obj = {}
 	let obj1 = {}
-	let obj2 = {}
-	let obj3 = {}
-	let obj4 = {}
 	function gender(gen){
 		let one = document.getElementById('one')
 		one.style.display = 'none'
@@ -10,9 +7,10 @@
 	}
 	
 	let img = document.getElementById('img')
-	let negative = ['img/negative/1.jpg','img/negative/2.jpg','img/negative/3.jpg','img/negative/4.jpg','img/negative/5.jpg','img/negative/6.jpg'];
-	let positive = ['img/positive/1.jpg','img/positive/2.jpg','img/positive/3.jpg','img/positive/4.jpg','img/positive/5.jpg','img/positive/6.jpg'];
-	let driver = ['img/11.jpg']
+	
+	let negative = ['https://tva1.sinaimg.cn/large/00831rSTly1gcmm0bg5mxj30ca066glj.jpg','https://tva1.sinaimg.cn/large/00831rSTly1gcmm1fyif0j30ca066jr9.jpg','https://tva1.sinaimg.cn/large/00831rSTly1gcmm2b9yi0j30ca066jra.jpg','https://tva1.sinaimg.cn/large/00831rSTly1gcmm2uazi1j30ca066a9z.jpg','https://tva1.sinaimg.cn/large/00831rSTly1gcmm3t6k48j30ca0663yk.jpg','https://tva1.sinaimg.cn/large/00831rSTly1gcmm43ted6j30ca066jrd.jpg'];
+	let positive = ['https://tva1.sinaimg.cn/large/00831rSTly1gcmm10mualj30ca066q2x.jpg','https://tva1.sinaimg.cn/large/00831rSTly1gcmm4r66twj30ca066gll.jpg','https://tva1.sinaimg.cn/large/00831rSTly1gcmm4kkwufj30ca066a9x.jpg','https://tva1.sinaimg.cn/large/00831rSTly1gcmm3nei5xj30ca066mx1.jpg','https://tva1.sinaimg.cn/large/00831rSTly1gcmm2nnrn9j30ca06674b.jpg','https://tva1.sinaimg.cn/large/00831rSTly1gcmm1qvz0xj30ca066jrb.jpg'];
+	let driver = ['https://tva1.sinaimg.cn/large/00831rSTly1gcmm4dkyvgj30ca0660sm.jpg']
 	let ar1 = negative.concat(positive).concat(positive)
 	
 	let ar2 = [...negative,...negative,...negative,...negative,...positive,...positive]
@@ -67,48 +65,48 @@
 		imgBtn.style.display = 'block'
 		let imgSrc = document.getElementById('img').getAttribute('src')
 		if(next == 'first' || next == 'two'){
-			if(imgSrc.indexOf('positive') != '-1' && type == 'positive'){
+			if((imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm10mualj30ca066q2x.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm4kkwufj30ca066a9x.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm3nei5xj30ca066mx1.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm2nnrn9j30ca06674b.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm1qvz0xj30ca066jrb.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm4r66twj30ca066gll.jpg') != '-1') && type == 'positive'){
 				aa.push('积极词')
 				imgSrc = ''
-				img.setAttribute('src','img/yes.jpg')
-			}else if(imgSrc.indexOf('negative') != '-1' && type == 'negative'){
+				img.setAttribute('src','https://tva1.sinaimg.cn/large/00831rSTly1gcmm3g2wxqj30ca066mx0.jpg')
+			}else if((imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm0bg5mxj30ca066glj.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm1fyif0j30ca066jr9.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm2b9yi0j30ca066jra.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm2uazi1j30ca066a9z.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm3t6k48j30ca0663yk.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm43ted6j30ca066jrd.jpg') != '-1') && type == 'negative'){
 				aa.push('消极词')
 				imgSrc = ''
-				img.setAttribute('src','img/yes.jpg')
-			}else if(imgSrc.indexOf('img/11') != '-1' && type == 'positive'){
+				img.setAttribute('src','https://tva1.sinaimg.cn/large/00831rSTly1gcmm3g2wxqj30ca066mx0.jpg')
+			}else if(imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm4dkyvgj30ca0660sm.jpg') != '-1' && type == 'positive'){
 				aa.push('女司机')
 				imgSrc = ''
-				img.setAttribute('src','img/yes.jpg')
+				img.setAttribute('src','https://tva1.sinaimg.cn/large/00831rSTly1gcmm3g2wxqj30ca066mx0.jpg')
 			}else{
-				if(imgSrc.indexOf('negative') != '-1'){
+				if(imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm0bg5mxj30ca066glj.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm1fyif0j30ca066jr9.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm2b9yi0j30ca066jra.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm2uazi1j30ca066a9z.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm3t6k48j30ca0663yk.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm43ted6j30ca066jrd.jpg') != '-1'){
 					aa.push('<span style="color:red ">消极词</span>')
 				}else{
 					aa.push('<span style="color:red ">积极词</span>')
 				}
 				imgSrc = ''
-				img.setAttribute('src','img/no.jpg')
+				img.setAttribute('src','https://tva1.sinaimg.cn/large/00831rSTly1gcmm38r6euj30ca066745.jpg')
 			}
 		}else{
-			if(imgSrc.indexOf('positive') != '-1' && type == 'positive'){
+			if((imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm10mualj30ca066q2x.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm4kkwufj30ca066a9x.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm3nei5xj30ca066mx1.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm2nnrn9j30ca06674b.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm1qvz0xj30ca066jrb.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm4r66twj30ca066gll.jpg') != '-1') && type == 'positive'){
 				aa.push('积极词')
 				imgSrc = ''
-				img.setAttribute('src','img/yes.jpg')
-			}else if(imgSrc.indexOf('negative') != '-1' && type == 'negative'){
+				img.setAttribute('src','https://tva1.sinaimg.cn/large/00831rSTly1gcmm3g2wxqj30ca066mx0.jpg')
+			}else if((imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm0bg5mxj30ca066glj.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm1fyif0j30ca066jr9.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm2b9yi0j30ca066jra.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm2uazi1j30ca066a9z.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm3t6k48j30ca0663yk.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm43ted6j30ca066jrd.jpg') != '-1') && type == 'negative'){
 				aa.push('消极词')
 				imgSrc = ''
-				img.setAttribute('src','img/yes.jpg')
-			}else if(imgSrc.indexOf('img/11') != '-1' && type == 'negative'){
+				img.setAttribute('src','https://tva1.sinaimg.cn/large/00831rSTly1gcmm3g2wxqj30ca066mx0.jpg')
+			}else if(imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm4dkyvgj30ca0660sm.jpg') != '-1' && type == 'negative'){
 				aa.push('女司机')
 				imgSrc = ''
-				img.setAttribute('src','img/yes.jpg')
+				img.setAttribute('src','https://tva1.sinaimg.cn/large/00831rSTly1gcmm3g2wxqj30ca066mx0.jpg')
 			}else{
-				if(imgSrc.indexOf('negative') != '-1'){
+				if(imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm0bg5mxj30ca066glj.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm1fyif0j30ca066jr9.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm2b9yi0j30ca066jra.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm2uazi1j30ca066a9z.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm3t6k48j30ca0663yk.jpg') != '-1' || imgSrc.indexOf('https://tva1.sinaimg.cn/large/00831rSTly1gcmm43ted6j30ca066jrd.jpg') != '-1'){
 					aa.push('<span style="color:red ">消极词</span>')
 				}else{
 					aa.push('<span style="color:red ">积极词</span>')
 				}
 				imgSrc = ''
-				img.setAttribute('src','img/no.jpg')
+				img.setAttribute('src','https://tva1.sinaimg.cn/large/00831rSTly1gcmm38r6euj30ca066745.jpg')
 			}
 		}
 		imgBtn.style.display = 'none'
