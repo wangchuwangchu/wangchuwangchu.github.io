@@ -1,0 +1,139 @@
+.contont{
+	width: 1000px;
+	height: 600px;
+	margin: 10px auto;
+	overflow: hidden;
+	border: 1px solid #ccc;
+}
+#one{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	/* display: none; */
+}
+#one h1{
+	font-size: 45px;
+}
+.gender{
+	width: 70%;
+	height: 200px;
+	line-height: 200px;
+	font-size: 40px;
+	font-weight: 600;
+	margin: 0 auto;
+}
+.gender span{ 
+	display: inline-block;
+	width: 49%;
+	height: 100%;
+}
+.gender2{
+	width: 70%;
+	height: 200px;
+	line-height: 200px;
+	font-size: 40px;
+	font-weight: 600;
+	margin: 0 auto;
+}
+.gender2 div{
+	border-radius:5px;
+}
+.btn{
+	width: 200px;
+	height: 60px;
+	float: left;
+	text-align: center;
+	line-height: 60px;
+	color: #FFFFFF;
+	margin-left: 70px;
+	border-radius:5px;
+	cursor: pointer;
+	background-color: #1287F4;
+}
+.btn2{
+	width: 200px;
+	height: 60px;
+	float: left;
+	text-align: center;
+	line-height: 60px;
+	color: #FFFFFF;
+	margin-left: 70px;
+	border-radius:5px;
+	margin-left: 160px;
+	cursor: pointer;
+	background-color: #1287F4;
+}
+#first,#two,#three,#four{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 40px;
+	font-size: 22px;
+}
+#table {
+	width: 1000px;
+	height: auto;
+	box-sizing: border-box;
+	font-size: 22px;
+	margin: 0 auto;
+	display: none;
+}
+.red{
+	color: red;
+}
+.right
+{
+	float: right;
+}
+#imgBox,#imgBox2{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 40px;
+}
+#imgBox img{
+	display: block;
+	margin: 0 auto;
+}
+#imgBox2 img{
+	display: block;
+	margin: 0 auto;
+}
+.imgBox{
+	width: 70%;
+	height: 200px;
+	line-height: 200px;
+	font-size: 40px;
+	font-weight: 600;
+	margin: 0 auto;
+}
+.imgBox div{
+	margin-top: 100px;
+	border-radius:5px;
+}
+/* #table div{
+	width: 49%;
+	height: 100%;
+	float: left;
+} */
+.table-c table{
+	border-right:1px solid #333;
+	border-bottom:1px solid #333
+	}
+.table-c table td{
+	width: 50%;
+	height: 45px;
+	line-height: 45x;
+	font-size: 16px;
+	text-align: center;
+	border-left:1px solid #333;
+	border-top:1px solid #333
+	}
+	.fa{
+		width: 100%;
+		height: auto;
+	}
+.left{
+	width: 50%;
+	float: left;
+}
